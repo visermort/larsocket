@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/ws', 'App\Http\Controllers\Controller@ws');
+Route::get('/ws/send', 'App\Http\Controllers\Controller@send');
